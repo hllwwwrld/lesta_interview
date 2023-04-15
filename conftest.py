@@ -11,7 +11,7 @@ def database():
     config.read('connection_config')
     database = SqlRequests(config)  # initializing class SqlRequests with given config to be able to access database
     yield database
-    database.close_connection()  # in the end of the sessing closing database connection
+    database.close_connection()  # in the end of the session closing database connection
 
 
 # fixture for create instance of tables: ships, weapons, hulls, engines with randomized one of tables column
