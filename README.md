@@ -9,3 +9,4 @@
  - create_config.py - file to create config with database connection parameters
  - requiremets.txt - installed for project libraries
  - create_db_sql.sql - scripts for postgresql database, creating 4 tables
+ - connection_config - file with database connection parameters (after launching create_config.py)
