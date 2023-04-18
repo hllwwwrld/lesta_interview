@@ -23,10 +23,10 @@ class TestMain:
 
         # comparing taken names from different db's
         assert main_ship_param_name == \
-               instance_ship_param_name, f'Ship {ship_name} have invalid parameter {ship_param} name ' \
-                                         f'from main database not similar to instance database ' \
-                                         f'expected: {main_ship_param_name} ' \
-                                         f'actual: {instance_ship_param_name}'
+               instance_ship_param_name, f'Ship {ship_name} have invalid parameter {ship_param} name' \
+                                         f' from main database not similar to instance database.' \
+                                         f' expected: {main_ship_param_name},' \
+                                         f' actual: {instance_ship_param_name}'
 
         # taking all parameter values as a dict {parameter's argument: value} for main and instance db
         main_ship_param_arguments = database.get_ship_param_arguments_values(ship_name, ship_param)
@@ -36,6 +36,6 @@ class TestMain:
         # choosing parameter and its value and comparing
         for argument in main_ship_param_arguments:
             assert main_ship_param_arguments[argument] == instance_ship_param_arguments[argument], f'Ship: {ship_name} argument: {argument} of {ship_param}' \
-                                                            f'from main database not similar to instance database' \
-                                                            f'expected: {main_ship_param_arguments[argument]}' \
-                                                            f'actual: {instance_ship_param_arguments[argument]}'
+                                                            f' from main database not similar to instance database.' \
+                                                            f' expected: {main_ship_param_arguments[argument]},' \
+                                                            f' actual: {instance_ship_param_arguments[argument]}'
