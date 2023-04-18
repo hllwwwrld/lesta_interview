@@ -36,8 +36,7 @@ class TestMain:
         # for every parameter's argument comparing value from instance db and main db
         # choosing parameter and its value and comparing
         for argument in main_ship_param_arguments:
-            assert main_ship_param_arguments[argument] == \
-                   instance_ship_param_arguments[argument], f'Ship: {ship_name} argument: {argument} of {ship_param}' \
+            assert main_ship_param_arguments[argument] == instance_ship_param_arguments[argument], f'Ship: {ship_name} argument: {argument} of {ship_param}' \
                                                             f'from main database not similar to instance database' \
-                                                            f'expected: {main_ship_param_name[argument]}' \
+                                                            f'expected: {main_ship_param_arguments[argument]}' \
                                                             f'actual: {instance_ship_param_arguments[argument]}'
