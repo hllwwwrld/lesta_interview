@@ -28,8 +28,7 @@ class TestMain:
                                          f'expected: {main_ship_param_name} ' \
                                          f'actual: {instance_ship_param_name}'
 
-        # taking all parameter values as a dict {parameter's argument: value}
-        # taking all parameter values as a dict {parameter's argument: value}
+        # taking all parameter values as a dict {parameter's argument: value} for main and instance db
         main_ship_param_arguments = database.get_ship_param_arguments_values(ship_name, ship_param)
         instance_ship_param_arguments = database.get_ship_param_arguments_values(ship_name, ship_param, main=False)
 
